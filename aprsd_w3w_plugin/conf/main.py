@@ -12,6 +12,11 @@ plugin_opts = [
         default=False,
         help="Enable the plugin?",
     ),
+    cfg.MultiStrOpt(
+        "apikeys",
+        default=[],
+        help="List of API keys to use",
+    ),
 ]
 
 ALL_OPTS = plugin_opts
